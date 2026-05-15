@@ -34,6 +34,9 @@ func init() {
 	rootCmd.Flags().StringP("output", "o", "", "output file path (e.g. out.gif, out.mp4, out.webm)")
 	rootCmd.Flags().StringP("publish", "p", "", "publish output to charm cloud")
 	rootCmd.Flags().BoolP("quiet", "q", false, "quiet mode (no output)")
+
+	// Disable the default completion command since I don't use it.
+	rootCmd.CompletionOptions.DisableDefaultCmd = true
 }
 
 func main() {
