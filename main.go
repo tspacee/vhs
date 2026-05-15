@@ -13,7 +13,8 @@ const (
 	Version = "0.1.0"
 
 	// DefaultPort is the default port for the vhs server.
-	DefaultPort = 1976
+	// Changed from 1976 to 8080 to avoid conflicts with other local services.
+	DefaultPort = 8080
 )
 
 var rootCmd = &cobra.Command{
